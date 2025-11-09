@@ -13,43 +13,43 @@
 
 <body>
     <header>
-        <nav aria-label="Main navigation">
+        <nav>
             <ul>
-                <li><a href="#" title="Go to Home Page">Home</a></li>
-                <li><a href="wwr/index.html" title="Visit My Tour Guide Homepage">My Tour Guide Homepage</a></li>
-                <li><a href="wwr/site-plan-burhan.html"
-                        title="View the Site Plan for Burhan's Tour Guide Homepage">Burhan's Site Plan</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="wwr/index.html">My Tour Guide Homepage</a></li>
+                <li><a href="wwr/site-plan-burhan.html">Burhan's Site Plan</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Burhan | WDD 130</h1>
-        <figure>
-            <img src="images/Burhan.jpg" alt="A photo of Burhan Looking at the right side" width="300">
-            <figcaption>Burhan – Your friendly local tour guide</figcaption>
-        </figure>
-        <p>Hello! My name is Burhan, and this is my Tour Guide Homepage. I’m passionate about helping visitors explore
-            the natural beauty and culture of Kenya.</p>
+        <h1>Welcome to Burhan's Tour Guide Homepage</h1>
+        <img src="images/Burhan.jpg" alt="Burhan smiling in front of a scenic view in Kenya">
+        <p>
+            Hello! My name is Burhan, and this is my Tour Guide Homepage. I’m passionate about helping visitors explore
+            the natural beauty and vibrant culture of Kenya. Through my tours, you’ll experience breathtaking
+            landscapes,
+            friendly communities, and unforgettable adventures.
+        </p>
     </main>
 
     <aside>
-        <h2>About Kenya</h2>
-        <figure>
-            <img src="images/Kenya.jpg" alt="A scenic view of Kenya’s landscape">
-            <figcaption>Kenya’s breathtaking landscape and wildlife</figcaption>
-        </figure>
+        <h2>Kenya</h2>
+        <img src="images/Kenya.jpg" alt="A scenic view of Kenya’s savannah landscape">
         <p>
             Kenya is a country in East Africa with a coastline on the Indian Ocean. It features savannahs, lakelands,
-            the dramatic Great Rift Valley, and mountain highlands.
-            It is also home to incredible wildlife like lions, elephants, and rhinos. Kenya's capital city is Nairobi.
+            the dramatic Great Rift Valley, and mountain highlands. Kenya is home to incredible wildlife such as lions,
+            elephants, and rhinos. The capital city is Nairobi.
         </p>
     </aside>
 
     <footer>
-        <p>&copy; <span id="year"></span> @2025 Burhan’s Tour Guide Homepage. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Burhan’s Tour Guide Homepage. All rights reserved.</p>
     </footer>
 
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
