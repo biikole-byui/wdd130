@@ -1,131 +1,60 @@
-/* ===== General Page Styling ===== */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fafafa;
-    color: #333;
-}
-
-/* Basic reset for common elements */
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-ol {
-    margin: 0;
-    padding: 0;
-}
-
-/* ===== Navigation ===== */
-header {
-    background-color: #004d40;
-    color: white;
-    padding: 1rem 0;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-nav li {
-    margin: 0 1rem;
+nav {
+    background-color: darkblue;
+    padding: 10px;
 }
 
 nav a {
     color: white;
-    text-decoration: none;
-    font-weight: bold;
+    display: block;
+    padding: 20px;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* ===== Main Content ===== */
 main {
     max-width: 840px;
-    margin: 1rem auto;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 8px;
 }
 
-main h1 {
-    color: #004d40;
+h1 {
+    color: darkblue;
+
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+p {
+    padding: 0;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / .2);
+    padding: 1rem;
+    background-color: rgb(237, 97, 79);
+    color: aliceblue;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
 }
 
 main img {
     width: 150px;
     height: auto;
-    display: block;
-    margin: 1rem auto;
-    border-radius: 50%;
-}
-
-/* ===== Aside Section ===== */
-aside {
-    width: 20rem;
-    max-width: 100%;
-    /* Ensures responsiveness */
-    margin: 1rem auto;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: 1px solid rgb(0 0 0 / .2);
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-    border-radius: 8px;
+    box-shadow: 0 0 30px grey;
 }
 
-aside img {
-    width: 100%;
-    /* Makes the image responsive */
-    max-width: 200px;
-    /* Ensures it doesn't get too large */
-    height: auto;
-    border-radius: 6px;
-}
-
-/* ===== Paragraphs ===== */
-p {
-    padding: 0;
-    line-height: 1.5;
-}
-
-/* ===== Footer ===== */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-    padding: 1rem;
-    background-color: #004d40;
-    color: white;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* ===== Media Queries for Responsiveness ===== */
-@media screen and (max-width: 768px) {
-    aside {
-        width: 100%;
-        /* Stacks aside to full width on small screens */
-        margin: 0;
-    }
-
-    main {
-        max-width: 100%;
-        /* Ensures the main section is responsive */
-        margin: 1rem;
-    }
 }
