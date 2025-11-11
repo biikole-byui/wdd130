@@ -4,11 +4,23 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fafafa;
     color: #333;
+}
+
+/* Basic reset for common elements */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
 }
 
 /* ===== Navigation ===== */
@@ -63,9 +75,10 @@ main img {
 /* ===== Aside Section ===== */
 aside {
     width: 20rem;
+    max-width: 100%;
+    /* Ensures responsiveness */
     margin: 1rem auto;
     border: 1px solid rgb(0 0 0 / 0.2);
-    /* 1 */
     padding: 1rem;
     background-color: #eee;
     color: #333;
@@ -74,7 +87,10 @@ aside {
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
+    /* Makes the image responsive */
+    max-width: 200px;
+    /* Ensures it doesn't get too large */
     height: auto;
     border-radius: 6px;
 }
@@ -97,4 +113,19 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* ===== Media Queries for Responsiveness ===== */
+@media screen and (max-width: 768px) {
+    aside {
+        width: 100%;
+        /* Stacks aside to full width on small screens */
+        margin: 0;
+    }
+
+    main {
+        max-width: 100%;
+        /* Ensures the main section is responsive */
+        margin: 1rem;
+    }
 }
